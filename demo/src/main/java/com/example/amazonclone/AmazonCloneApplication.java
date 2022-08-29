@@ -1,4 +1,4 @@
-package com.example.amazonclone.demo;
+package com.example.amazonclone;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ public class AmazonCloneApplication {
 
 	@RequestMapping("/")
     String home() {
-        return "Hello World!";
+        return "Hello Worldss!";
     }
 
 	public static void main(String[] args) {
