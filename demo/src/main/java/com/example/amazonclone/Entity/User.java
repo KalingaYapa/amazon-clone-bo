@@ -20,8 +20,16 @@ public class User {
 
     private String name;
     private String address;
-
     private String email;
+    private String uniqueID;
+
+    public String getUniqueID() {
+        return uniqueID;
+    }
+
+    public void setUniqueID(String uniqueID) {
+        this.uniqueID = uniqueID;
+    }
 
     public long getId() {
         return this.id;

@@ -22,7 +22,7 @@ public class UserController {
         return userService.saveUserData(userData);
     }
 
-    @GetMapping("getUserDetails/{userID}")
+    @GetMapping("getUserDetails/{email}")
     public User getUserData(@PathVariable String email) {
         return userService.getUserDetailsFromDB(email);
     }
