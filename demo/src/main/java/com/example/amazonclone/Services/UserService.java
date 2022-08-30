@@ -20,7 +20,7 @@ public class UserService {
 
 
     // get data from the database
-    public User getUserDetailsFromDB(String email) {
-        return userRepository.findAllByEmail(email);
+    public User getUserDetailsFromDB(String uniqueId) {
+        return userRepository.findAllByUniqueID(uniqueId);
     }
 }

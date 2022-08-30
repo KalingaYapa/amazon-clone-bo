@@ -22,8 +22,8 @@ public class UserController {
         return userService.saveUserData(userData);
     }
 
-    @GetMapping("getUserDetails/{email}")
-    public User getUserData(@PathVariable String email) {
-        return userService.getUserDetailsFromDB(email);
+    @GetMapping("getUserDetails/{uniqueId}")
+    public User getUserData(@PathVariable String uniqueId) {
+        return userService.getUserDetailsFromDB(uniqueId);
     }
 }
